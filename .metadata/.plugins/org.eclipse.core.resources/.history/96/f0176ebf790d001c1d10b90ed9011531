@@ -1,0 +1,13 @@
+package gameProject;
+
+import Entities.Game;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Oyun ekleme
+		Game game = new Game(1, "PUBG", 100);		
+	}
+
+}

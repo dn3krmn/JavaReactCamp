@@ -1,0 +1,11 @@
+package odev3;
+
+public class InstructorManager {
+	public void ListCourse(Instructor instructor) {
+		System.out.println(instructor.getFirstName() + " eðitmeninin verdiði kurslar;");
+		for (String courses : instructor.getHavingCourses()) {
+			System.out.println(courses);
+		}		
+	}
+
+}

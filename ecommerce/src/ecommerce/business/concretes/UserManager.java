@@ -1,0 +1,54 @@
+package ecommerce.business.concretes;
+
+import ecommerce.business.abstracts.UserCheckService;
+import ecommerce.business.abstracts.UserService;
+import ecommerce.business.abstracts.VerificationService;
+import ecommerce.dataAccess.abstracts.UserDao;
+import ecommerce.entities.concretes.User;
+
+public class UserManager implements UserService{
+
+	private UserDao userDao;
+	private UserCheckService userCheckService;
+	private VerificationService verificationService;
+	
+	public UserManager(UserDao userDao, UserCheckService userCheckService,
+			VerificationService verificationService) {
+		super();
+		this.userDao = userDao;
+		this.userCheckService = userCheckService;
+		this.verificationService = verificationService;
+	}
+
+	@Override
+	public void signIn(User user) {
+		
+		//doðrulama linki
+		verificationService.verifyMail(user.getEmail()); 
+		
+		if(userDao.getEmail(user.getEmail()) && 
+				userDao.getPassword(user.getPassword()) == true) {
+			System.out.println("----Baþarýyla Giriþ Yaptýnýz-------");
+		} else if(userDao.getEmail(user.getEmail()) == false) {
+			System.out.println("YANLIÞ EMAIL GÝRDÝNÝZ");
+		} else if(userDao.getPassword(user.getPassword()) == false) {
+			System.out.println("YANLIÞ PAROLA GÝRDÝNÝZ");
+		} else {
+			System.out.println("Girilen Bilgiler Yanlýþ");
+		}
+		
+		
+	}
+
+	@Override
+	public void signUp(User user) {
+		if(userCheckService.isValid(user)) {
+			System.out.println(user.getFirstName() 
+					+ " kullanýcýsý sisteme eklenmiþtir.");
+			verificationService.sendVerificationMail(user);
+			userDao.add(user);
+		}
+		
+	}
+
+}

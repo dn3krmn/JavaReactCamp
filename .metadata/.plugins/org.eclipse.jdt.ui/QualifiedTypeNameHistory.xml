@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="oopIntro.Category"/>
+    <fullyQualifiedTypeName name="oopIntro.Product"/>
+    <fullyQualifiedTypeName name="interfaces.CustomerManager"/>
+    <fullyQualifiedTypeName name="interfaces.Customer"/>
+    <fullyQualifiedTypeName name="interfaces.SmsLogger"/>
+    <fullyQualifiedTypeName name="interfaces.Logger"/>
+    <fullyQualifiedTypeName name="interfaces.DatabaseLogger"/>
+    <fullyQualifiedTypeName name="interfaces.Utils"/>
+    <fullyQualifiedTypeName name="Entity.Customer"/>
+    <fullyQualifiedTypeName name="Abstract.IEntity"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="Abstract.ICustomerCheckServices"/>
+    <fullyQualifiedTypeName name="tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy"/>
+    <fullyQualifiedTypeName name="Concrete.StarbucksCustomerManager"/>
+    <fullyQualifiedTypeName name="Adapters.MernisServiceAdapter"/>
+    <fullyQualifiedTypeName name="Concrete.BaseCustomerManager"/>
+    <fullyQualifiedTypeName name="Concrete.NeroCustomerManager"/>
+    <fullyQualifiedTypeName name="Entities.Customer"/>
+    <fullyQualifiedTypeName name="Entities.Player"/>
+    <fullyQualifiedTypeName name="nLayeredDemo.entities.abstracts.Entity"/>
+</qualifiedTypeNameHistroy>

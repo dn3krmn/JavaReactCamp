@@ -1,0 +1,5 @@
+package ecommerce.business.concretes;
+
+public class UserCheckManager {
+
+}

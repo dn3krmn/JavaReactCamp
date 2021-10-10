@@ -1,0 +1,50 @@
+package ecommerce.business.concretes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ecommerce.business.abstracts.UserCheckService;
+import ecommerce.entities.concretes.User;
+
+public class UserCheckManager implements UserCheckService{
+	
+	
+	List<String> emails = new ArrayList<String>();
+
+	@Override
+	public boolean checkFirstName(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkLastName(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkPassword(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkEmail(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean uniqueEmail(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isValid(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
