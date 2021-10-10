@@ -13,9 +13,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		User user1 = new User(1, "Döne", "Karaman", "dk@gmail.com", "dkdkdk");
-		User user2 = new User(2, "Büşra", "Karaman", "bk@gmail.com", "baka");
-		User user3 = new User(3, "Mehmet", "Kardaş", "mösyç@gmail.co", 
+		User user1 = new User(1, "DÃ¶ne", "Karaman", "dk@gmail.com", "dkdkdk");
+		User user2 = new User(2, "BÃ¼Ã¾ra", "Karaman", "bk@gmail.com", "bkbk");
+		User user3 = new User(3, "Mehmet", "KardaÃ¾", "mÃ¶syÃ§@gmail.co", 
 				"memomemo");
 		
 		UserService userService = new UserManager(new HibernateUserDao(), 
