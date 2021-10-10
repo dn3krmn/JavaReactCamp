@@ -23,10 +23,10 @@ public class Category {
 		this.id = id;
 	}
 	
-	/* void ben bir şey yapmayacağım ben sadece bir şey yapacağım demek*/
+	
 	
 	public String getName() {
-		return name + "!"; //okunurken hepsinin sonunda ünlem olsun diye
+		return name + "!";
 	}
 	
 	public void setName(String name) {
